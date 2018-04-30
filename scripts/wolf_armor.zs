@@ -1,3 +1,5 @@
+#priority 1
+
 //Importinnnnng-ah!
 	
 	import crafttweaker.item.IIngredient;
@@ -10,14 +12,6 @@
 		var wolfArmorIron = <wolfarmor:iron_wolf_armor>;
 		var wolfArmorGold = <wolfarmor:gold_wolf_armor>;
 		var wolfArmorDiamond = <wolfarmor:diamond_wolf_armor>;
-	
-	//Materials
-		var leather = <minecraft:leather>;
-		var diamond = <minecraft:diamond>;
-		var ingotIron = <minecraft:iron_ingot>;
-		var ingotGold = <minecraft:gold_ingot>;
-		var nuggetIron = <minecraft:iron_nugget>;
-		var nuggetGold = <minecraft:gold_nugget>;
 		
 //Wolf Armor (what else?)
 	//Chainmail Wolf Armor
@@ -34,4 +28,4 @@
 
 	//Diamond Wolf Armor
 		recipes.remove(wolfArmorDiamond);
-		recipes.addShaped(wolfArmorDiamond, [[diamond, null, null],[ingotIron, leather, ingotIron], [diamond, null, diamond]]);
+		recipes.addShaped(wolfArmorDiamond, [[gemDiamond, null, null],[nuggetDiamond, leather, nuggetDiamond], [gemDiamond, null, gemDiamond]]);
