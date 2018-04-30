@@ -1,5 +1,3 @@
-#priority 1
-
 //Importing!
 	
 	import crafttweaker.item.IIngredient;
