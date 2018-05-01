@@ -20,13 +20,13 @@
 //Armor Plating (only here because SJ2 got fucked)
 
 	//Bronze Armor Plating
-		InductionSmelter.addRecipe(platingBronze, platingIron, ingotBronze * 10, energy * 4);
+		InductionSmelter.addRecipe(platingBronze, platingIron, ingotBronze * 10, energy * 2);
 
 	//Invar Armor Plating
-		InductionSmelter.addRecipe(platingInvar, platingBronze, ingotInvar * 10, energy * 6);
+		InductionSmelter.addRecipe(platingInvar, platingBronze, ingotInvar * 10, energy * 3);
 
 	//Enderium Armor Plating
-		InductionSmelter.addRecipe(platingEnder, platingInvar, ingotEnderium * 10, energy * 8);
+		InductionSmelter.addRecipe(platingEnder, platingInvar, ingotEnderium * 10, energy * 4);
 
 //Fluxpacks
 

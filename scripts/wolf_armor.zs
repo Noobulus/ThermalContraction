@@ -2,14 +2,10 @@
 	
 	import crafttweaker.item.IIngredient;
 	import crafttweaker.item.IItemStack;
+	import mods.thermalexpansion.InductionSmelter;
+	import mods.thermalexpansion.Pulverizer;
 
-//Variables, because humans aren't computers!
-	
-	//Wolf Armor
-		var wolfArmorChain = <wolfarmor:chainmail_wolf_armor>;
-		var wolfArmorIron = <wolfarmor:iron_wolf_armor>;
-		var wolfArmorGold = <wolfarmor:gold_wolf_armor>;
-		var wolfArmorDiamond = <wolfarmor:diamond_wolf_armor>;
+	var energy = 6000;
 		
 //Wolf Armor (what else?)
 	//Chainmail Wolf Armor
@@ -27,3 +23,9 @@
 	//Diamond Wolf Armor
 		recipes.remove(wolfArmorDiamond);
 		recipes.addShaped(wolfArmorDiamond, [[gemDiamond, null, null],[nuggetDiamond, leather, nuggetDiamond], [gemDiamond, null, gemDiamond]]);
+
+//Armor Recyclingggg
+	InductionSmelter.addRecipe(ingotIron * 2, wolfArmorChain, blockSand, energy, crystalSlag, 20);
+	InductionSmelter.addRecipe(ingotIron * 2, wolfArmorIron, blockSand, energy, crystalSlag, 20);
+	InductionSmelter.addRecipe(ingotGold * 2, wolfArmorGold, blockSand, energy, crystalSlag, 20);
+	Pulverizer.addRecipe(gemDiamond * 2, wolfArmorDiamond, energy);
