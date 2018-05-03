@@ -164,5 +164,5 @@ import crafttweaker.liquid.ILiquidStack;
 	global capacity as int = 1000;
 
 	/* Fluids */
-		global water as ILiquidStack = <minecraft:water>;
-		global lava as IItemStack = <minecraft:lava>;
+		global water as ILiquidStack = <fluid:water>;
+		global lava as ILiquidStack = <fluid:lava>;
