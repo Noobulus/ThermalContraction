@@ -3,8 +3,7 @@
 import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDict;
 import crafttweaker.oredict.IOreDictEntry;
-
-global energy as int = 1600;
+import crafttweaker.liquid.ILiquidStack;
 
 /* Materials */
 	/* Ingots */
@@ -109,17 +108,17 @@ global energy as int = 1600;
 			global pistonSticky as IItemStack = <minecraft:sticky_piston>;			
 
 /* Utilities */
-	global morb as IItemStack = <thermalexpansion:morb>;
-	global morbReusable as IItemStack = <thermalexpansion:morb:1>;
-	global book as IItemStack = <minecraft:book>;
-	global bookEnchanted as IItemStack = <minecraft:enchanted_book>;
-
 	/* Tools */
 		global transporterBasic as IItemStack = <whoosh:transporter>;
+
+		global reservoirResonant as IItemStack = <thermalexpansion:reservoir:4>;
 
 		global quiverFlux as IItemStack = <redstonearsenal:util.quiver_flux>;
 		global bowFlux as IItemStack = <redstonearsenal:tool.bow_flux>;
 		global fishingRodFlux as IItemStack = <redstonearsenal:tool.fishing_rod_flux>;
+
+		global bucket as IItemStack = <minecraft:bucket>;
+		global bucketInfinite as IItemStack = <infinibucket:infini_bucket>;
 
 	/* Armor */
 		global saddle as IItemStack = <minecraft:saddle>;
@@ -128,7 +127,11 @@ global energy as int = 1600;
 		global wolfArmorChain as IItemStack = <wolfarmor:chainmail_wolf_armor>;
 		global wolfArmorIron as IItemStack = <wolfarmor:iron_wolf_armor>;
 		global wolfArmorGold as IItemStack = <wolfarmor:gold_wolf_armor>;
-		global wolfArmorDiamond as IItemStack = <wolfarmor:diamond_wolf_armor>;		
+		global wolfArmorDiamond as IItemStack = <wolfarmor:diamond_wolf_armor>;
+
+		global fluxpackLeadstone as IItemStack = <simplyjetpacks:itemfluxpack:6>;
+		global fluxpackReinforced as IItemStack = <simplyjetpacks:itemfluxpack:7>;
+		global fluxpackResonant as IItemStack = <simplyjetpacks:itemfluxpack:8>;		
 
 	/* Upgrades */
 		global upgradeHardened as IItemStack = <thermalfoundation:upgrade:0>;
@@ -139,8 +142,27 @@ global energy as int = 1600;
 		global conversionSignalum as IItemStack = <thermalfoundation:upgrade:34>;
 		global conversionResonant as IItemStack = <thermalfoundation:upgrade:35>;
 
+		global platingIron as IItemStack = <simplyjetpacks:metaitemmods:19>;
+		global platingBronze as IItemStack = <simplyjetpacks:metaitemmods:20>;
+		global platingInvar as IItemStack = <simplyjetpacks:metaitemmods:21>;
+		global platingEnderium as IItemStack = <simplyjetpacks:metaitemmods:22>;
+
 	/* Food */
 		<ore:rawFish>.add(<minecraft:fish:*>);
 		global rawFish as IOreDictEntry = <ore:rawFish>;
 		<ore:cookedFish>.add(<minecraft:cooked_fish:*>);
 		global cookedFish as IOreDictEntry = <ore:cookedFish>;
+
+	/* Miscellaneous */
+		global morb as IItemStack = <thermalexpansion:morb>;
+		global morbReusable as IItemStack = <thermalexpansion:morb:1>;
+		global book as IItemStack = <minecraft:book>;
+		global bookEnchanted as IItemStack = <minecraft:enchanted_book>;
+
+/* Other */
+	global energy as int = 1600;
+	global capacity as int = 1000;
+
+	/* Fluids */
+		global water as ILiquidStack = <minecraft:water>;
+		global lava as IItemStack = <minecraft:lava>;
